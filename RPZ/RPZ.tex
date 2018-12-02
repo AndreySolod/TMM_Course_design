@@ -1,0 +1,98 @@
+\documentclass[a4paper]{article}
+%\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} %% ваша любимая кодировка здесь
+\usepackage{mathtext}
+\usepackage[english,russian]{babel} %% это необходимо для включения переносов
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[14pt]{extsizes}
+%\usepackage{times}
+%\usepackage{cyrtimes}
+\usepackage{vmargin}
+%\setmarginsrb{0.5cm}{0.5cm}{0.5cm}{0.5cm}{0pt}{0mm}{0pt}{13mm}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{cmap}          % русский поиск в pdf
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{fancyhdr}
+\newcommand{\RNumb}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\fancypagestyle{phdthesis}{%
+\fancyhf %clear all headers and footers fields
+\fancyhead[RE,RO]{\thepage} %prints the page number on the right side of the header
+}
+\sloppy
+\begin{document}
+	%Титульная страница
+	\pagestyle{empty}
+	\begin{center}
+		Московский Государственный Технический Университет
+		
+		имени Н. Э. Баумана
+	\end{center}
+	\underline{\hspace{0.9\textwidth}}
+	\vfill
+	\vfill
+	\begin{center}
+		Факультет <<Машиностроительные технологии>>
+		
+		Кафедра <<Теория механизмов и машин>>
+	\end{center}
+	\vfill
+	\vfill
+	\vfill
+	\begin{center}
+		\large
+		\textbf{РАСЧЁТНО--ПОЯСНИТЕЛЬНАЯ ЗАПИСКА}
+	\end{center}
+	
+	\begin{center}
+		к курсовому проекту на тему:
+	\end{center}
+	\begin{center}
+		\large
+		''Проектирование и исследование механизмов плунжерного насоса простого действия''
+	\end{center}
+	
+	\begin{center}
+		Вариант 37(д)
+	\end{center}
+	\vfill
+	\vfill
+	\textit{Студент: Солодянкин А.Д.}
+	
+	\noindent\textit{Руководитель проекта: Шаныгин С.В.}
+	
+	\underline{\hspace{0.9\textwidth}}
+	
+	\begin{center}
+		-Москва, 2018г.-
+	\end{center}
+	\clearpage
+	\pagestyle{fancy} % смена стиля оформления страниц
+	\fancyhf{} % очистка текущих значений
+	\fancyhead[R]{\normalsize \thepage} % установка верхнего колонтитула
+	\renewcommand{\headrulewidth}{0pt} % убрать разделительную линию
+	\input{Repherat.tex}
+	\newpage
+	\tableofcontents
+	\newpage
+	\input{Technical_task}
+	\newpage
+	\input{Source_data}
+	\newpage
+	\input{Proj_main_mech}
+	\newpage
+	\input{comp_force}
+	\newpage
+	\input{list_3.tex}
+	\newpage
+	\input{list_4.tex}
+	\newpage
+	\input{conclusion.tex}
+	\newpage
+	\input{bibliograph}
+	\newpage
+	\input{prog_planet}
+\end{document}

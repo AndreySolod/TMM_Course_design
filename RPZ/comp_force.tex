@@ -1,0 +1,176 @@
+\section{Силовой расчёт механизма}
+
+\subsection{Определение исходных данных, необходимых для силового расчёта механизма}
+
+Исходными данными для силового расчёта механизма являются:
+
+\begin{itemize}
+	\item Угловая координата кривошипа $ \varphi_1 = 210^{\circ}$
+	\item Угловая скорость $ \omega_1 = 12.8 рад \cdot с^{-1} $
+	\item Угловое ускорение $ \varepsilon_1 = -0.495 рад \cdot с^{-2} $
+\end{itemize}
+
+\subsection{Нахождение скоростей. План скоростей.}
+
+\begin{equation}
+	v_b = \omega_1 \cdot l_1 = 1.052 м/с
+\end{equation}
+
+Определим скорости с использованием программы Jupyter Notebook:
+
+
+\begin{eqnarray}
+	\vec \omega_1 = (12.8)\mathbf{\hat{k}_{oxyz}}; \\
+	\vec \omega_2 = (\omega_{2})\mathbf{\hat{k}_{oxyz}}; \\
+	\vec {AB} = (0.071)\mathbf{\hat{i}_{oxyz}} + (-0.041)\mathbf{\hat{j}_{oxyz}}; \\
+	\vec {BC} = (-0.355)\mathbf{\hat{i}_{oxyz}} + (0.041)\mathbf{\hat{j}_{oxy}}; \\
+	\vec {BS_2} = (-0.098)\mathbf{\hat{i}_{oxyz}} + (0.011)\mathbf{\hat{j}_{oxyz}}
+\end{eqnarray}
+
+\begin{equation}
+	\vec v_b = [\vec \omega_1, \vec {AB}] = (0.526)\mathbf{\hat{i}_{oxyz}} + (0.911)\mathbf{\hat{j}_{oxyz}}
+\end{equation}
+
+\begin{eqnarray}
+	\vec v_c =(v_c)\mathbf{\hat{i}_{oxyz}}; \\
+	\vec v_{cb} =[\vec \omega_2, \vec {BC}]; \\
+	\vec v_c = \vec v_b + \vec v_{cb}; \\
+	\vec v_{s2} = \vec v_b + (- 0.011 \omega_{2})\mathbf{\hat{i}_{oxyz}} + (- 0.098 \omega_{2})\mathbf{\hat{j}_{oxyz}}
+\end{eqnarray}
+
+Решая данное уравнение, получаем:
+
+	$$\omega_2 = 2.569 рад/c;$$
+	$$v_c = 0.451 м/с;$$
+	$$v_{cb} = 0.917 м/с$$
+	$$v_{s2} = 0.826 м/с$$
+
+Сверим с данными из плана скоростей:
+
+	$$v_{cb} = 0.912 м/с;$$
+	$$v_{c} = 0.453 м/с;$$
+	$$v_{s2} = 0.827 м/с;$$
+	$$\omega_2 = \dfrac{v_{cb}}{l_bc} = 2.555 рад/c;$$
+
+Данные совпадают, значит, ошибки нет.
+
+\subsection{Нахождение ускорений. План ускорений}
+
+Определим ускорения с использованием программы Jupyter Notebook
+
+\begin{eqnarray}
+	\vec \varepsilon_1 = (-0.495)\mathbf{\hat{k}_{oxyz}}; \\
+	\vec \varepsilon_2 = \varepsilon_2\mathbf{\hat{k}_{oxyz}}; \\
+	\vec a_b = (-11.728)\mathbf{\hat{i}_{oxyz}} + (6.722)\mathbf{\hat{j}_{oxyz}} \\
+	\vec a_c = a_c \mathbf{\hat{k}_{oxyz}}; \\
+	\vec a_cb = [\vec \varepsilon_2, \vec {BC}] + [\vec \omega_2, \vec v_c]; \\
+	\vec a_c = \vec a_b + \vec a_{cb}
+\end{eqnarray}
+
+Решая данное уравнение, получаем:
+
+	$$a_b = 13.519 м/с^2$$ 
+	$$\varepsilon_2 = 19.023 рад/с^2$$
+	$$a_c = 10.102 м/с^2$$ 
+	$$a_{cb} = 7.869 м/с^2$$ 
+	$$a_{s2} = 13.189 м/с^2$$ 
+
+Сверим с данными из плана ускорений:
+
+$$a_b = 13.520; $$
+$$\varepsilon_2 = 19.022 рад/с^2; $$
+$$a_c = 10.107 м/с^2; $$
+$$a_{cb} = 7.875 м/с^2; $$
+$$a_{s2} = 13.188 м/с^2; $$
+
+Данные совпадают, значит, ошибки нет.
+
+\subsection{Определение главных векторов сил инерции и главных моментов сил инерции}
+
+\begin{eqnarray}
+	\Phi_{s2} = a_{s2} m_2 = 73.128 H \\
+	\Phi_{s3} = a_{s3} m_3 = 174.879 H 
+\end{eqnarray}
+
+\begin{eqnarray}
+	G_2 = m_2 g = 58.86 H \\
+	G_3 = m_3 g = 176.58 H
+\end{eqnarray}
+
+\begin{eqnarray}
+	M_{\Phi S_1} = J_{1}^{пр} \cdot \varepsilon_1 = 1.16 \cdot 10^4 Н \cdot м\\
+	M_{\Phi S_2} = J_{2S} \cdot \varepsilon_2 = 2.617 Н \cdot м
+\end{eqnarray}
+
+\subsection{Кинетостатический силовой расчёт механизма}
+
+\subsubsection{Звенья 2--3}
+
+\begin{equation}
+	\sum M_c (F_i) = 0
+\end{equation}
+
+\begin{equation}
+	-M_{\Phi S2} - M_c(G_2) + M(F_{21}^{\tau}) - M(\Phi_{S2}) = 0
+\end{equation}
+
+\begin{equation*}
+	F_{21}^{\tau} = 65.407 Н
+\end{equation*}
+
+\begin{equation}
+	\sum F_i = 0
+\end{equation}
+
+Из графика:
+
+	$$F_{21}^{n} = 1889668 Н;$$
+	$$R_{30} = 217735 Н $$
+	$$F_{21} = 1889668.001$$
+
+Тогда:
+
+\begin{equation*}
+	F_{23} = 1899233.21 Н
+\end{equation*}
+
+\subsubsection{Звено 1.}
+
+\begin{eqnarray}
+	\sum M_c (F_i) = 0\\
+	\sum F_i = 0
+\end{eqnarray}
+	$$F_{10} = 1889668 H;$$
+	$$M_D^{пр} = 50526.4 H;$$
+
+
+\subsection{Проверка результатов}
+
+Проверим результаты с использованием программы Jupyter Notebook:
+
+	$$F_{10} = 1899557.660 Н;$$
+	$$F_{21} = 1899546.418 Н;$$
+	$$F_{32} = 1899454.148 Н;$$
+	$$R_{30} = 217759.784 Н;$$
+	$$M_D^{пр} = 50156.403 H$$
+
+Погрешность $M_D^{пр}$, определённая в силовом расчёте с использованием программы Jupyter Notebook, по сравнению со средним движущим моментом, найденным в первом листе, можно объяснить пренебрежением приведённого момента $M_{G2}^{пр}$ в первом листе.
+
+\subsection{Погрешность приведённого момента}
+
+Сравнивая приведённый момент, определённый в силовом расчёте, со средним движущим моментом, найденным в первом листе, найдём погрешность:
+
+ \begin{equation}
+ 	\varepsilon = \dfrac{ \left| M_D^{пр} - M_D^{пр*} \right| }{M_D^{пр}} \cdot 100 = 0.741 \%
+ \end{equation}
+ 
+ \begin{table}
+ 	\caption{Результаты силового расчёта}
+ \begin{tabular}{|c|c|c|c|c|c|}
+ 	\hline 
+ 	$F_{10}$, Н & $F_{12}$, Н & $F_{32}$, Н & $R_{30}$, Н &  $M_D^{пр},Н \cdot мм$ & $M_D^{пр*}, H \cdot мм$ \\ 
+ 	\hline 
+ 	1889668 & 1889668 & 1899233 & 217735 & 50526.4 & 50153.4 \\ 
+ 	\hline 
+ \end{tabular} 
+\end{table}

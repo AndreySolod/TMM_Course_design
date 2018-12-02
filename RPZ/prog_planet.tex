@@ -1,0 +1,35 @@
+\section*{Приложение А. \\
+	(обязательное) \\
+	Текст программы planet.py}
+\addcontentsline{toc}{section}{Приложение А. Текст программы planet.py}
+
+\begin{alltt}
+1  from math import pi, sin
+2  
+3  
+4  u = 9.4
+5  k = 3
+6  n = False
+7  for z1 in range(17, 200, 1):
+8      tt = round(z1 * u / k * 10) - z1 * u / k * 10
+9      if not (-0.0001 < tt < 0.0001):
+10          continue
+11     for z2 in range(17, 200, 1):
+12         for z3 in range(17, 200, 1):
+13             for z4 in range(85, 200, 1):
+14                 k1 = 1 + (z2 * z4) / (z1 * z3)
+15                 t1 = (z1 + z2 == z4 - z3)
+16                 t2 = (u - 0.01 < k1 < u + 0.01)
+17                 t3 = sin(pi / k) > (max(z2, z3) + 2) / (z1 + z2)
+18                 if t1 and t2 and t3:
+19                     if (k1 == 9.4):
+20                         n = True
+21                         print(z1, z2, z3, z4, k1)
+22                         break
+23                     print(z1, z2, z3, z4, k1)
+24              if n: break
+25        if n: break
+26     if n: break
+\end{alltt}
+
+\label{final_page}

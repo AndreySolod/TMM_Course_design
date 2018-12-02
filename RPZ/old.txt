@@ -1,0 +1,49 @@
+\begin{document}
+	%Титульная страница
+	\thispagestyle{empty}
+	\begin{center}
+		Московский Государственный Технический Университет
+		
+		имени Н. Э. Баумана
+	\end{center}
+	\underline{\hspace{0.9\textwidth}}
+	\vfill
+	\vfill
+	\begin{center}
+		Факультет <<Машиностроительные технологии>>
+		
+		Кафедра <<Теория механизмов и машин>>
+	\end{center}
+	\vfill
+	\vfill
+	\vfill
+	\vfill
+	\begin{center}
+		\large
+		\textbf{РАСЧЁТНО--ПОЯСНИТЕЛЬНАЯ ЗАПИСКА}
+	\end{center}
+
+	\begin{center}
+		к курсовому проекту на тему:
+	\end{center}
+	\vfill
+	\begin{center}
+		\large
+		''Проектирование и исследование механизмов плунжерного насоса простого действия''
+	\end{center}
+
+	\begin{center}
+		Вариант 37(д)
+	\end{center}
+	\vfill
+	\vfill
+	\textit{Студент: Солодянкин А.Д.}
+	
+	\noindent\textit{Руководитель проекта: Шаныгин С.В.}
+	
+	\underline{\hspace{0.9\textwidth}}
+	
+	\begin{center}
+		-Москва, 2018г.-
+	\end{center}
+	\clearpage
