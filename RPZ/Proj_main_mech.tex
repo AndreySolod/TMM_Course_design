@@ -13,13 +13,13 @@
 	Т. к. $\dfrac{l_{bc}}{l_{ab}} = 4.36$, то
 
 \begin{equation}
-	l_{bc} = l_{ab} \cdot 4.36 = 0.357 м
+	l_{bc} = l_{ab} \cdot 4.36 = 0.082 \cdot 4.36 = 0.357 м
 \end{equation}
 
 	Т. к. $\dfrac{l_{bs2}}{l_{bc}} = 0.275$, то
 
 \begin{equation}
-	l_{bs2} = l_{bc} \cdot 0.275 = 0.098 м.
+	l_{bs2} = l_{bc} \cdot 0.275 = 0.357 \cdot 0.275 = 0.098 м.
 \end{equation}
 
 \subsection{Построение схемы механизма}
@@ -31,17 +31,17 @@
 Средняя угловая скорость звена 1:
 
 \begin{equation}
-	\omega_{ср} = 2 \cdot \pi \cdot n_1 = 12.566 рад/с
+	\omega_{ср} = 2 \cdot \pi \cdot n_1 = 2 \cdot 3.1415 \cdot 2 = 12.566 рад/с
 \end{equation}
 
 Вычисляем передаточные функции с использованием программы Jupyter Notebook.
 
 \begin{equation}
-	v_{qc} = \Big | 0.081875 \sin{\left (\varphi \right )} + \frac{2.046875 \sin{\left (\varphi \right )} \cos{\left (\varphi \right )}}{\sqrt{- 625.0 \sin^{2}{\left (\varphi \right )} + 11881.0}} \Big |
+	v_{qc} = \Big | 0.081 \sin{\left (\varphi \right )} + \frac{2.05 \sin{\left (\varphi \right )} \cos{\left (\varphi \right )}}{\sqrt{- 625 \sin^{2}{\left (\varphi \right )} + 11881}} \Big |
 \end{equation}
 
 \begin{equation}
-	u_{21} = - \frac{0.229357798165138 \cos{\left (\varphi \right )}}{\sqrt{- 0.05260499957916 \sin^{2}{\left (\varphi \right )} + 1}}
+	u_{21} = - \frac{0.229 \cos{\left (\varphi \right )}}{\sqrt{- 0.053 \sin^{2}{\left (\varphi \right )} + 1}}
 \end{equation}
 
 \begin{table}
@@ -93,7 +93,7 @@
 Определим площадь поршня:
 
 \begin{equation}
-	S_п = \dfrac{\pi d^2}{4} = \dfrac{\pi \cdot 0.99^2}{4} = 0.7698 м^2
+	S_п = \dfrac{\pi d^2}{4} = \dfrac{3.1415 \cdot 0.99^2}{4} = 0.7698 м^2
 \end{equation}
 
 График силы $F_c$ строим в масштабе:
