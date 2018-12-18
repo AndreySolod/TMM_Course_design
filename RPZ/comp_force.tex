@@ -13,77 +13,25 @@
 \subsection{Нахождение скоростей. План скоростей.}
 
 \begin{equation}
-	v_b = \omega_1 \cdot l_1 = 1.052 м/с
+	v_b = \omega_1 \cdot l_1 = 12.8 \cdot 0.082 = 1.052 м/с
 \end{equation}
 
-Определим скорости с использованием программы Jupyter Notebook:
-
-
-\begin{eqnarray}
-	\vec \omega_1 = (12.8)\mathbf{\hat{k}_{oxyz}}; \\
-	\vec \omega_2 = (\omega_{2})\mathbf{\hat{k}_{oxyz}}; \\
-	\vec {AB} = (0.071)\mathbf{\hat{i}_{oxyz}} + (-0.041)\mathbf{\hat{j}_{oxyz}}; \\
-	\vec {BC} = (-0.355)\mathbf{\hat{i}_{oxyz}} + (0.041)\mathbf{\hat{j}_{oxy}}; \\
-	\vec {BS_2} = (-0.098)\mathbf{\hat{i}_{oxyz}} + (0.011)\mathbf{\hat{j}_{oxyz}}
-\end{eqnarray}
-
-\begin{equation}
-	\vec v_b = [\vec \omega_1, \vec {AB}] = (0.526)\mathbf{\hat{i}_{oxyz}} + (0.911)\mathbf{\hat{j}_{oxyz}}
-\end{equation}
-
-\begin{eqnarray}
-	\vec v_c =(v_c)\mathbf{\hat{i}_{oxyz}}; \\
-	\vec v_{cb} =[\vec \omega_2, \vec {BC}]; \\
-	\vec v_c = \vec v_b + \vec v_{cb}; \\
-	\vec v_{s2} = \vec v_b + (- 0.011 \omega_{2})\mathbf{\hat{i}_{oxyz}} + (- 0.098 \omega_{2})\mathbf{\hat{j}_{oxyz}}
-\end{eqnarray}
-
-Решая данное уравнение, получаем:
-
-	$$\omega_2 = 2.569 рад/c;$$
-	$$v_c = 0.451 м/с;$$
-	$$v_{cb} = 0.917 м/с$$
-	$$v_{s2} = 0.826 м/с$$
-
-Сверим с данными из плана скоростей:
+Из плана скоростей:
 
 	$$v_{cb} = 0.912 м/с;$$
 	$$v_{c} = 0.453 м/с;$$
 	$$v_{s2} = 0.827 м/с;$$
 	$$\omega_2 = \dfrac{v_{cb}}{l_bc} = 2.555 рад/c;$$
 
-Данные совпадают, значит, ошибки нет.
-
 \subsection{Нахождение ускорений. План ускорений}
 
-Определим ускорения с использованием программы Jupyter Notebook
-
-\begin{eqnarray}
-	\vec \varepsilon_1 = (-0.495)\mathbf{\hat{k}_{oxyz}}; \\
-	\vec \varepsilon_2 = \varepsilon_2\mathbf{\hat{k}_{oxyz}}; \\
-	\vec a_b = (-11.728)\mathbf{\hat{i}_{oxyz}} + (6.722)\mathbf{\hat{j}_{oxyz}} \\
-	\vec a_c = a_c \mathbf{\hat{k}_{oxyz}}; \\
-	\vec a_{cb} = [\vec \varepsilon_2, \vec {BC}] + [\vec \omega_2, \vec v_c]; \\
-	\vec a_c = \vec a_b + \vec a_{cb}
-\end{eqnarray}
-
-Решая данное уравнение, получаем:
-
-	$$a_b = 13.519 м/с^2$$ 
-	$$\varepsilon_2 = 22.006 рад/с^2$$
-	$$a_c = 12.629 м/с^2$$ 
-	$$a_{cb} = 6.673 м/с^2$$ 
-	$$a_{s2} = 14.873 м/с^2$$ 
-
-Сверим с данными из плана ускорений:
+Из плана ускорений:
 
 $$a_b = 13.520; $$
 $$\varepsilon_2 = 22.004 рад/с^2; $$
 $$a_c = 12.618 м/с^2; $$
 $$a_{cb} = 6.675 м/с^2; $$
 $$a_{s2} = 14.879 м/с^2; $$
-
-Данные совпадают, значит, ошибки нет.
 
 \subsection{Определение главных векторов сил инерции и главных моментов сил инерции}
 

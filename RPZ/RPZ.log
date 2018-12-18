@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.7)  17 DEC 2018 02:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880 64-bit) (preloaded format=pdflatex 2018.12.7)  18 DEC 2018 21:01
 entering extended mode
 **./RPZ.tex
 (RPZ.tex
@@ -2045,34 +2045,27 @@ Underfull \hbox (badness 2080) in paragraph at lines 105--105
 []\T2A/Tempora-TLF/b/n/17.28 Построение гра-фи-ков при-ве-дјн-ных мо-мен-тов
  []
 
-[11] [12] [13] [14]) [15] (comp_force.tex
-Underfull \hbox (badness 4060) in paragraph at lines 19--20
-[]\T2A/Tempora-TLF/m/n/14.4 Определим ско-ро-сти с ис-поль-зо-ва-ни-ем про-грам
--мы Jupyter
- []
-
-[16]
-Underfull \hbox (badness 2435) in paragraph at lines 59--60
-[]\T2A/Tempora-TLF/m/n/14.4 Определим уско-ре-ния с ис-поль-зо-ва-ни-ем про-гра
-м-мы Jupyter
- []
-
-[17] [18]
-Underfull \hbox (badness 2980) in paragraph at lines 149--150
+[11] [12] [13] [14]) [15] (comp_force.tex [16] [17]
+Underfull \hbox (badness 2980) in paragraph at lines 97--98
 []\T2A/Tempora-TLF/m/n/14.4 Проверим ре-зуль-та-ты с ис-поль-зо-ва-ни-ем про-гр
 ам-мы Jupyter
  []
 
-[19]) [20] (list_3.tex [21] [22] [23]
+) [18] (list_3.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19] [20] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
 []\T2A/Tempora-TLF/m/n/14.4 Для опре-де-ле-ния $\OML/cmm/m/it/14.4 z[]; z[]; z[
 ]; z[]$ \T2A/Tempora-TLF/m/n/14.4 вос-поль-зу-ем-ся про-грам-мой
  []
 
-) [24] (list_4.tex [25]) [26] (conclusion.tex) [27] (bibliograph.tex) [28]
-(prog_planet.tex
+[22]) [23] (list_4.tex [24]) [25] (conclusion.tex) [26] (bibliograph.tex)
+[27] (prog_planet.tex
 LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 6.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.fd"
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 Overfull \hbox (54.92055pt too wide) in paragraph at lines 21--21
@@ -2080,13 +2073,13 @@ Overfull \hbox (54.92055pt too wide) in paragraph at lines 21--21
 1 + z2))[] 
  []
 
-) [29] (RPZ.aux) ) 
+) [28] (RPZ.aux) ) 
 Here is how much of TeX's memory you used:
- 7835 strings out of 492969
- 113679 string characters out of 3135826
+ 7826 strings out of 492969
+ 113568 string characters out of 3135826
  155309 words of memory out of 3000000
- 11336 multiletter control sequences out of 15000+200000
- 71427 words of font info for 103 fonts, out of 3000000 for 9000
+ 11333 multiletter control sequences out of 15000+200000
+ 70502 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,43p,2871b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\РђРЅРґСЂРµР№\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
@@ -2102,23 +2095,21 @@ xuc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tempora/t2a-tempora.enc}<C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/tempora/Tempora-Bold.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/tempora/Tempora-Italic.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/tempora/Tempora-Regular.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/s
-ymbols/msam10.pfb>
-Output written on RPZ.pdf (29 pages, 510973 bytes).
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb>
+Output written on RPZ.pdf (28 pages, 491898 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
+ 284 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
