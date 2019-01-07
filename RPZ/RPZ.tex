@@ -1,30 +1,24 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper]{article} %класс документа
 %\usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc} %% ваша любимая кодировка здесь
-\usepackage{mathtext}
-\usepackage[english,russian]{babel} %% это необходимо для включения переносов
-%\linespread{1.5} %отступ в 1.5 пункта
+\usepackage{mathtext} %Для русского текста в математическом режиме
+\usepackage[english,russian]{babel} % это необходимо для включения переносов
+%\linespread{1.3} %отступ в 1.5 пункта --- там еще уточнить надо
 \usepackage{float}
-\usepackage{graphicx}
-\usepackage[14pt]{extsizes}
-%\usepackage{cyrtimes}
-\usepackage{vmargin}
+\usepackage{graphicx} %Для возможности вставлять рисунки
+\usepackage[14pt]{extsizes} % шрифт 14 пунктов
+\usepackage{vmargin} %Это не помню, но, вроде, тоже нужно
 %\setmarginsrb{0.5cm}{0.5cm}{0.5cm}{0.5cm}{0pt}{0mm}{0pt}{13mm}
-\usepackage{indentfirst}
-\usepackage{amsmath}
+\usepackage{indentfirst} %Красная строка, или табуляция в начале
+\usepackage{amsmath} %ams-пакеты, или для красоты в математическом режиме
 \usepackage{cmap}          % русский поиск в pdf
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{alltt}
-\usepackage{fancyhdr}
-%\usepackage{times}
-\usepackage{tempora}
-\newcommand{\RNumb}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
-\fancypagestyle{phdthesis}{%
-\fancyhf %clear all headers and footers fields
-\fancyhead[RE,RO]{\thepage} %prints the page number on the right side of the header
-}
-\sloppy
+\usepackage{amsfonts} %ams-пакеты, или для красоты в математическом режиме(точно не помню, что дают каждый из них)
+\usepackage{amssymb} %ams-пакеты, или для красоты в математическом режиме
+\usepackage{alltt} %Для красивого оформления текста программ
+\usepackage{fancyhdr} % Для переопределения нумерации страниц, или для цифра справа вверху
+\usepackage{tempora} %Вроде, это таймсоподобный шрифт
+\newcommand{\RNumb}[1]{\uppercase\expandafter{\romannumeral #1\relax}} %новая команда, вставляет римскую цифру
+\sloppy %не помню что, но тоже нужно
 \begin{document}
 	%Титульная страница
 	\pagestyle{empty}
